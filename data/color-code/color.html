@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f8fafc;
+    }
+    
+    .section {
+      margin-bottom: 40px;
+    }
+    
+    h2 {
+      color: #0f172a;
+      margin-bottom: 20px;
+    }
+    
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .color-card {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      background: white;
+    }
+    
+    .color-display {
+      height: 100px;
+      width: 100%;
+    }
+    
+    .color-info {
+      padding: 12px;
+    }
+    
+    .color-name {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    
+    .color-hex {
+      font-family: monospace;
+      color: #64748b;
+    }
+    
+    .gradient-display {
+      height: 100px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    
+    .gradient-info {
+      font-family: monospace;
+      font-size: 14px;
+      color: #334155;
+      background: #f1f5f9;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color: #0f172a; margin-bottom: 30px;">Xatcode Color System</h1>
+  
+  <div class="section">
+    <h2>Primary Colors</h2>
+    <div class="color-grid">
+      <!-- Core Blue -->
+      <div class="color-card">
+        <div class="color-display" style="background: #2563EB;"></div>
+        <div class="color-info">
+          <div class="color-name">Core Blue Primary</div>
+          <div class="color-hex">#2563EB</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #60A5FA;"></div>
+        <div class="color-info">
+          <div class="color-name">Core Blue Light</div>
+          <div class="color-hex">#60A5FA</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #1E40AF;"></div>
+        <div class="color-info">
+          <div class="color-name">Core Blue Dark</div>
+          <div class="color-hex">#1E40AF</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Slate Colors -->
+    <div class="color-grid">
+      <div class="color-card">
+        <div class="color-display" style="background: #334155;"></div>
+        <div class="color-info">
+          <div class="color-name">Slate Primary</div>
+          <div class="color-hex">#334155</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #64748B;"></div>
+        <div class="color-info">
+          <div class="color-name">Slate Light</div>
+          <div class="color-hex">#64748B</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #0F172A;"></div>
+        <div class="color-info">
+          <div class="color-name">Slate Dark</div>
+          <div class="color-hex">#0F172A</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Accent Colors</h2>
+    <!-- Purple -->
+    <div class="color-grid">
+      <div class="color-card">
+        <div class="color-display" style="background: #7C3AED;"></div>
+        <div class="color-info">
+          <div class="color-name">Purple Primary</div>
+          <div class="color-hex">#7C3AED</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #A78BFA;"></div>
+        <div class="color-info">
+          <div class="color-name">Purple Light</div>
+          <div class="color-hex">#A78BFA</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #5B21B6;"></div>
+        <div class="color-info">
+          <div class="color-name">Purple Dark</div>
+          <div class="color-hex">#5B21B6</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Teal -->
+    <div class="color-grid">
+      <div class="color-card">
+        <div class="color-display" style="background: #0D9488;"></div>
+        <div class="color-info">
+          <div class="color-name">Teal Primary</div>
+          <div class="color-hex">#0D9488</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #2DD4BF;"></div>
+        <div class="color-info">
+          <div class="color-name">Teal Light</div>
+          <div class="color-hex">#2DD4BF</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #0F766E;"></div>
+        <div class="color-info">
+          <div class="color-name">Teal Dark</div>
+          <div class="color-hex">#0F766E</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Neutral Colors</h2>
+    <div class="color-grid">
+      <div class="color-card">
+        <div class="color-display" style="background: #FFFFFF; border: 1px solid #E2E8F0;"></div>
+        <div class="color-info">
+          <div class="color-name">Pure White</div>
+          <div class="color-hex">#FFFFFF</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #F8FAFC;"></div>
+        <div class="color-info">
+          <div class="color-name">Off White</div>
+          <div class="color-hex">#F8FAFC</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #F1F5F9;"></div>
+        <div class="color-info">
+          <div class="color-name">Light Gray</div>
+          <div class="color-hex">#F1F5F9</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Gradients</h2>
+    <div class="gradient-display" style="background: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);"></div>
+    <div class="gradient-info">Primary Gradient: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%)</div>
+    
+    <div class="gradient-display" style="background: linear-gradient(135deg, #1E40AF 0%, #5B21B6 100%);"></div>
+    <div class="gradient-info">Secondary Gradient: linear-gradient(135deg, #1E40AF 0%, #5B21B6 100%)</div>
+    
+    <div class="gradient-display" style="background: linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 100%);"></div>
+    <div class="gradient-info">Subtle Gradient: linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 100%)</div>
+  </div>
+</body>
+</html>

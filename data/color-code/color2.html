@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #f8fafc;
+    }
+    
+    .section {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    h2 {
+      color: #0f172a;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    
+    h3 {
+      color: #334155;
+      margin: 15px 0;
+      font-size: 18px;
+    }
+    
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .color-card {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    
+    .color-display {
+      height: 100px;
+      width: 100%;
+    }
+    
+    .color-info {
+      padding: 12px;
+      background: white;
+    }
+    
+    .color-name {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    
+    .color-hex {
+      font-family: monospace;
+      color: #64748b;
+      margin-bottom: 6px;
+    }
+
+    .color-usage {
+      font-size: 13px;
+      color: #64748b;
+      line-height: 1.4;
+    }
+    
+    .gradient-display {
+      height: 100px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    
+    .gradient-info {
+      font-family: monospace;
+      font-size: 14px;
+      color: #334155;
+      background: #f1f5f9;
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+
+    .usage-example {
+      background: #f8fafc;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .usage-example h4 {
+      color: #334155;
+      margin-bottom: 10px;
+    }
+
+    .usage-example ul {
+      margin: 0;
+      padding-left: 20px;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color: #0f172a; margin-bottom: 30px;">Xatcode Comprehensive Color System</h1>
+
+  <!-- Primary Colors -->
+  <div class="section">
+    <h2>Primary Brand Colors</h2>
+    <div class="color-grid">
+      <div class="color-card">
+        <div class="color-display" style="background: #2563EB;"></div>
+        <div class="color-info">
+          <div class="color-name">Brand Blue</div>
+          <div class="color-hex">#2563EB</div>
+          <div class="color-usage">Primary brand color, CTAs, important buttons, links</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #1E40AF;"></div>
+        <div class="color-info">
+          <div class="color-name">Deep Blue</div>
+          <div class="color-hex">#1E40AF</div>
+          <div class="color-usage">Hover states, secondary buttons, active states</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #3B82F6;"></div>
+        <div class="color-info">
+          <div class="color-name">Light Blue</div>
+          <div class="color-hex">#3B82F6</div>
+          <div class="color-usage">Highlights, notifications, success states</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Secondary Colors -->
+  <div class="section">
+    <h2>Secondary Colors</h2>
+    <div class="color-grid">
+      <div class="color-card">
+        <div class="color-display" style="background: #7C3AED;"></div>
+        <div class="color-info">
+          <div class="color-name">Innovation Purple</div>
+          <div class="color-hex">#7C3AED</div>
+          <div class="color-usage">Feature highlights, AI-related elements, innovation sections</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #059669;"></div>
+        <div class="color-info">
+          <div class="color-name">Success Green</div>
+          <div class="color-hex">#059669</div>
+          <div class="color-usage">Success messages, positive states, growth indicators</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #EA580C;"></div>
+        <div class="color-info">
+          <div class="color-name">Energy Orange</div>
+          <div class="color-hex">#EA580C</div>
+          <div class="color-usage">Attention elements, warnings, special features</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gray Scale -->
+  <div class="section">
+    <h2>Gray Scale</h2>
+    <div class="color-grid">
+      <div class="color-card">
+        <div class="color-display" style="background: #0F172A;"></div>
+        <div class="color-info">
+          <div class="color-name">Text Black</div>
+          <div class="color-hex">#0F172A</div>
+          <div class="color-usage">Primary text, headings, important content</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #334155;"></div>
+        <div class="color-info">
+          <div class="color-name">Gray Dark</div>
+          <div class="color-hex">#334155</div>
+          <div class="color-usage">Secondary text, subheadings</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #64748B;"></div>
+        <div class="color-info">
+          <div class="color-name">Gray Medium</div>
+          <div class="color-hex">#64748B</div>
+          <div class="color-usage">Placeholder text, disabled states</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #E2E8F0;"></div>
+        <div class="color-info">
+          <div class="color-name">Gray Light</div>
+          <div class="color-hex">#E2E8F0</div>
+          <div class="color-usage">Borders, dividers, subtle backgrounds</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #F8FAFC;"></div>
+        <div class="color-info">
+          <div class="color-name">Background Gray</div>
+          <div class="color-hex">#F8FAFC</div>
+          <div class="color-usage">Page backgrounds, alternate sections</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Accent Colors -->
+  <div class="section">
+    <h2>System Colors</h2>
+    <div class="color-grid">
+      <div class="color-card">
+        <div class="color-display" style="background: #DC2626;"></div>
+        <div class="color-info">
+          <div class="color-name">Error Red</div>
+          <div class="color-hex">#DC2626</div>
+          <div class="color-usage">Error messages, destructive actions</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #EAB308;"></div>
+        <div class="color-info">
+          <div class="color-name">Warning Yellow</div>
+          <div class="color-hex">#EAB308</div>
+          <div class="color-usage">Warning messages, attention states</div>
+        </div>
+      </div>
+      <div class="color-card">
+        <div class="color-display" style="background: #14B8A6;"></div>
+        <div class="color-info">
+          <div class="color-name">Info Teal</div>
+          <div class="color-hex">#14B8A6</div>
+          <div class="color-usage">Information messages, help states</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gradients -->
+  <div class="section">
+    <h2>Gradient Combinations</h2>
+    <div class="gradient-display" style="background: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);"></div>
+    <div class="gradient-info">Primary Gradient (Hero sections): linear-gradient(135deg, #2563EB 0%, #7C3AED 100%)</div>
+    
+    <div class="gradient-display" style="background: linear-gradient(135deg, #7C3AED 0%, #EA580C 100%);"></div>
+    <div class="gradient-info">Innovation Gradient (Feature sections): linear-gradient(135deg, #7C3AED 0%, #EA580C 100%)</div>
+    
+    <div class="gradient-display" style="background: linear-gradient(135deg, #059669 0%, #2563EB 100%);"></div>
+    <div class="gradient-info">Success Gradient (Achievement sections): linear-gradient(135deg, #059669 0%, #2563EB 100%)</div>
+  </div>
+
+  <!-- Usage Guidelines -->
+  <div class="section">
+    <h2>Usage Guidelines</h2>
+    <div class="usage-example">
+      <h4>Brand Elements</h4>
+      <ul>
+        <li>Use Brand Blue (#2563EB) as the primary color for logos and main CTAs</li>
+        <li>Innovation Purple (#7C3AED) for highlighting tech features</li>
+        <li>Deep Blue (#1E40AF) for hover states and emphasis</li>
+      </ul>
+    </div>
+    <div class="usage-example">
+      <h4>Typography</h4>
+      <ul>
+        <li>Text Black (#0F172A) for main headings and body text</li>
+        <li>Gray Dark (#334155) for secondary text</li>
+        <li>Gray Medium (#64748B) for supporting text</li>
+      </ul>
+    </div>
+    <div class="usage-example">
+      <h4>UI Elements</h4>
+      <ul>
+        <li>Success Green (#059669) for positive actions and success states</li>
+        <li>Error Red (#DC2626) for error messages and warnings</li>
+        <li>Gray Light (#E2E8F0) for borders and separators</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
