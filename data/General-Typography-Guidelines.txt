@@ -1,0 +1,153 @@
+Got it! Here's the Typography Design Guide updated to align with your logo colors: #5271FF (Primary Blue) and #000000 (Black), with a supporting palette for light/dark modes and accent needs. The design ensures the website feels cohesive and professional.
+
+---
+
+ Typography Design Guide
+
+ Color Palette
+- Primary Color (Blue): `#5271FF`  
+- Secondary Accent Color (Dark Blue): `#4051D3` (for hover and highlights)  
+- Neutral Text (Dark Gray): `#333333` (for most text)  
+- Secondary Text (Light Gray): `#666666` (for smaller or less prominent text)  
+- Background (Light): `#F9FAFB`  
+- Background (Dark Elements): `#000000`  
+- Borders/Dividers: `#DDDDDD`  
+
+---
+
+ 1. Typography Rules
+
+# Headings (H1–H6)  
+Use Montserrat to ensure boldness and clarity. Colors for headings are generally Black (#000000) or Primary Blue (#5271FF).  
+
+- H1 (Main Page Titles):  
+  - Font Size: 48px  
+  - Font Weight: 700 (Bold)  
+  - Line Height: 1.2  
+  - Letter Spacing: -0.5px  
+  - Color: Primary Blue (`#5271FF`)  
+
+- H2 (Section Titles):  
+  - Font Size: 36px  
+  - Font Weight: 600 (Semi-Bold)  
+  - Line Height: 1.3  
+  - Color: Dark Gray (`#333333`) or Primary Blue (`#5271FF`)  
+
+- H3 (Subsection Titles):  
+  - Font Size: 28px  
+  - Font Weight: 500 (Medium)  
+  - Line Height: 1.4  
+  - Color: Dark Gray (`#333333`)  
+
+- H4–H6 (Smaller Titles):  
+  - H4: Font Size: 24px, Weight: 500  
+  - H5: Font Size: 20px, Weight: 500  
+  - H6: Font Size: 16px, Weight: 500  
+  - Line Height: 1.5 for all  
+  - Color: Secondary Gray (`#666666`)  
+
+---
+
+# Body Text (Paragraphs)  
+Use Roboto for a clean and modern body text style.  
+
+- Primary Paragraphs (P):  
+  - Font Size: 16px  
+  - Font Weight: 400 (Regular)  
+  - Line Height: 1.6  
+  - Color: Dark Gray (`#333333`)  
+
+- Secondary/Small Text (Meta, Labels, or Notes):  
+  - Font Size: 14px  
+  - Font Weight: 400 (Regular)  
+  - Line Height: 1.4  
+  - Color: Light Gray (`#666666`)  
+
+---
+
+ 2. Links and Navigation
+- Main Navigation Links:  
+  - Font: Montserrat  
+  - Font Size: 16px  
+  - Font Weight: 600 (Semi-Bold)  
+  - Letter Spacing: 0.5px  
+  - Color: Primary Blue (`#5271FF`)  
+  - Hover Color: Dark Blue (`#4051D3`)  
+  - Text Transform: None  
+
+- Inline Text Links:  
+  - Font: Roboto  
+  - Font Size: 16px  
+  - Font Weight: 400 (Regular)  
+  - Color: Primary Blue (`#5271FF`)  
+  - Hover: Underlined with Dark Blue (`#4051D3`)  
+
+---
+
+ 3. Buttons  
+- Primary Button:  
+  - Font: Montserrat  
+  - Font Size: 16px  
+  - Font Weight: 600 (Semi-Bold)  
+  - Text Transform: Uppercase  
+  - Background: Primary Blue (`#5271FF`)  
+  - Text Color: White (`#FFFFFF`)  
+  - Padding: 12px 24px  
+  - Border Radius: 8px  
+  - Hover Background: Dark Blue (`#4051D3`)  
+
+- Secondary Button (Outlined):  
+  - Font: Montserrat  
+  - Font Size: 16px  
+  - Font Weight: 500 (Medium)  
+  - Text Transform: Uppercase  
+  - Text Color: Primary Blue (`#5271FF`)  
+  - Background: Transparent  
+  - Border: 2px solid Primary Blue (`#5271FF`)  
+  - Hover Background: Primary Blue, Text Color White  
+
+---
+
+ 4. Forms and Input Fields
+- Labels:  
+  - Font: Montserrat  
+  - Font Size: 14px  
+  - Font Weight: 600 (Semi-Bold)  
+  - Color: Light Gray (`#666666`)  
+
+- Input Fields:  
+  - Font: Roboto  
+  - Font Size: 16px  
+  - Font Weight: 400 (Regular)  
+  - Padding: 10px 15px  
+  - Border: 1px solid Light Gray (`#DDDDDD`)  
+  - Border Radius: 6px  
+  - Focus State: Border Primary Blue (`#5271FF`), Background White  
+
+---
+
+ 5. Footer Text
+- Footer Text:  
+  - Font: Roboto  
+  - Font Size: 14px  
+  - Font Weight: 400 (Regular)  
+  - Color: Light Gray (`#666666`)  
+  - Line Height: 1.6  
+
+- Footer Links:  
+  - Font: Montserrat  
+  - Font Size: 14px  
+  - Font Weight: 600 (Semi-Bold)  
+  - Color: White (`#FFFFFF`)  
+  - Hover: Underlined with Lighter Blue  
+
+---
+
+ Spacing Guidelines
+- Vertical Spacing between Sections: 60px  
+- Spacing between Headings and Paragraphs: 20px  
+- Line Spacing for Lists: 1.6  
+
+---
+
+Would you like me to integrate these updated styles into a webpage example?
