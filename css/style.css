@@ -135,7 +135,7 @@
 /* *************************** */
 
 .section-hero {
-  padding: 0 0 4rem 0;
+  margin: 0 0 4rem 0;
   
 }
 
@@ -248,6 +248,7 @@
   background-color: #ffffff;
   display: flex;
   align-items: center;
+  margin-bottom: 14rem;
 }
 
 .track {
@@ -281,4 +282,140 @@
   display: inline-block;
   width: 100%; /* Ensure seamless scrolling */
 }
+
+
+
+
+
+
+/* ********************************** */
+/* About Us Section */
+/* ********************************** */
+
+.section-about-us{
+  margin: 0;
+  
+}
+
+.about-us {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  gap: 9.6rem;
+  align-items: center;
+  
+  
+}
+
+.about-us h2 {
+  
+  font-size: 3.6rem;
+  margin: 6rem auto 0rem ;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; 
+  line-height: 1.2;
+  letter-spacing: -0.05rem;
+  font-style: normal;
+  width : 80%;
+  text-align: center;
+
+
+  
+
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem; /* Balanced spacing between text and image */
+  align-items: center;
+  /* margin-bottom: 6rem; */
+  padding: 0 3.2rem;
+  margin-top: -5rem;
+}
+
+.about-content-text {
+  font-size: 1.8rem; /* Optimized font size for readability */
+  line-height: 1.8;
+  font-weight: 400;
+  color: #333333;
+  text-align: left;
+}
+
+.about-content-description {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #666666;
+}
+
+.about-content-description strong {
+  font-weight: 600; /* Bold important parts */
+}
+
+.about-content-description br {
+  margin-bottom: 1rem; /* Adds spacing between paragraphs */
+}
+
+.about-content-img {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.about-content-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners for a smoother look */
+  object-fit: contain; /* Ensures the image scales without cropping */
+}
+
+
+.stats-section {
+  /* padding: 4rem 2rem; */
+  text-align: center;
+  /* margin-top: 5rem; */
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 2.4rem;
+  max-width: 120rem;
+  margin: -8rem auto 0;
+}
+
+.stat-box {
+  background: #FFFFFF;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-0.5rem);
+}
+
+.stat-number {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.stat-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #666666;
+}
+
+
+
 
