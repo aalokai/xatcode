@@ -423,7 +423,7 @@
 
 .section-services {
   margin: 0;
-  background-color: #F9FAFB;
+
   /* background-image: url("../images/graph.png");
   background-repeat: no-repeat;
   background-size:cover; */
@@ -569,3 +569,31 @@
 
 
 
+
+
+/* ********************************** */
+/* Testimonials Section */
+/* ********************************** */
+
+
+
+.section-testimonials {
+  background-color: #F9FAFB;
+  margin: 4rem 0 8rem 0;
+  
+
+  
+}
+
+.testimonials {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+
+
+
+}
