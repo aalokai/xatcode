@@ -588,10 +588,10 @@
 .testimonials {
   max-width: 130rem;
   margin: 0 auto;
-  padding: 0 3.2rem;
+  padding: 8rem 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
+  gap: 8rem;
   align-items: center;
 
 
@@ -602,7 +602,57 @@
 .testimonials-values{
   display: grid;
   grid-template-rows: auto;
-  gap: 2rem;
+  gap: 1rem;
 
 
+}
+
+.testimonials-values-item-box{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+.testimonials-values-item{
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 6rem;
+}
+
+.testimonials-values-item .values-item-img img{
+  width: 60px;
+  height: 60px;
+}
+
+
+.values-item-text{
+  font-size: 2rem;
+  
+  color: #333;
+
+  
+  letter-spacing: 0.2rem;
+  color: #666666;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600; 
+  
+  font-style: normal;
+  
+  line-height: 1.2;
+
+}
+
+.values-item-text span{
+  font-size: 2rem;
+  font-weight: 400;
+  color: #888888;
+  letter-spacing: 0.1rem;
+}
+
+
+.testimonials-box{
+  
 }
