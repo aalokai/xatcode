@@ -312,7 +312,7 @@
 .about-us h2 {
   
   font-size: 3.6rem;
-  margin: 6rem auto 0rem ;
+  margin: 4rem auto 0rem ;
   color: #000000;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -829,4 +829,76 @@
 
 .section__title--testimonials {
   margin-bottom: 4rem;
+}
+
+
+/* ********************************** */
+/* Contact Section */
+/* ********************************** */
+
+.section-contact-us {
+  
+  margin: 8rem 0 8rem 0;
+  
+}
+
+
+
+.contact-us {
+  max-width: 130rem;
+  margin: 0 auto;
+  border-radius: 10px;
+  /* padding: 0 3.2rem; */
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  /* gap: 9.6rem; */
+  align-items: center;
+  /* background-color: #5271FF; */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.address-section{
+  background-color: red;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.contact-us-address-area{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6rem;
+  /* align-items: center; */
+  padding: 0 3.2rem;
+
+}
+
+.contact-us-cta-heading{
+
+}
+
+.cta-heading{
+
+}
+
+.cta-text{
+
+}
+
+.form-section{
+  background-color: #8EC5FC;
+}
+
+.contact-us-form-area{
+  display: grid;
+  grid-template-columns: 1fr;
+  
+
+}
+
+.contact-us-form{
+
+}
+
+.form-heading{
+
 }

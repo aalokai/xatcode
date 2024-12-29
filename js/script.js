@@ -244,16 +244,16 @@ slider();
 
 
 
-// Set current year
-const yearEl = document.querySelector(".year");
-const currentYear = new Date().getFullYear();
-yearEl.textContent = currentYear;
+// // Set current year
+// const yearEl = document.querySelector(".year");
+// const currentYear = new Date().getFullYear();
+// yearEl.textContent = currentYear;
 
-// Make mobile navigation work
+// // Make mobile navigation work
 
-const btnNavEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".header");
+// const btnNavEl = document.querySelector(".btn-mobile-nav");
+// const headerEl = document.querySelector(".header");
 
-btnNavEl.addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
-});
+// btnNavEl.addEventListener("click", function () {
+//   headerEl.classList.toggle("nav-open");
+// });
