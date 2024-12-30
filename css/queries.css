@@ -1,0 +1,740 @@
+/* rem and em do not depend on html font-size in media queries!
+Instead, 1rem=1em=16px */
+/* ***************** */
+/* Below 1344px (Smaller desktops) */
+/* ***************** */
+
+
+@media (max-width: 64em) {
+    
+
+    .main-nav-list {
+        
+        gap: 2rem;
+        
+      }
+
+    .stats-section {
+        
+        margin-top: 2rem;
+    }
+    
+    
+    .cta-heading{
+        margin: 0.1rem 0 2rem 1rem;
+        font-size: 2.4rem;
+        
+      }
+      
+      .cta-text{
+        margin: 2rem 0 2rem 1rem;
+        font-size: 4rem;
+        
+      
+      }
+      
+      .cta-image{
+        margin: 0 0 1rem 2rem;
+        width: 100px;
+        height: 100px;
+      
+      }
+      
+      .cta-image img{
+        width: 100px;
+        height: 100px;
+        transform: scaleX(-1);
+      }
+      
+
+      .contact-us-address{
+
+        margin: 0 0 0 1rem;
+        
+      }
+      
+      .address-item{
+        margin-top: 2rem;
+      
+      }
+      
+      .address-icon{
+        display: flex;
+        gap: 1rem;
+      
+      }
+      
+      .icon-img{
+        width: 25px;
+        height: 25px;
+      
+      }
+      
+      .icon-img img{
+        width: 25px;
+        height: 25px;
+        
+      }
+      
+      .icon-text{
+        display: flex;
+        font-size: 1.6rem;
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500; 
+        margin: auto 0;
+        letter-spacing: 0.1rem;
+        font-style: normal;
+        line-height: 1.2;
+      }
+      
+
+      
+      
+      .social-media{
+        margin: 0 0 1rem 1rem;
+
+      }
+
+      
+      
+      
+      
+      
+      
+      
+      
+      .contact-us-form-area{
+
+        padding: 2rem;
+      }
+      
+
+      
+      .form-heading{
+        font-size: 3rem;
+        
+        margin-bottom: 1rem;
+        
+      
+      }
+      
+      
+      .message-form{
+        
+        column-gap: 2rem;
+        padding: 1rem;
+      }
+
+      
+      .message-form input, .message-form textarea{
+        margin-bottom: 2.4rem;
+       
+        
+      }
+
+      
+      .message-form textarea{
+        height: 15rem;
+      }
+      
+      .msg-btn{
+
+        font-size: 1.6rem;
+       
+        margin-top: 1rem;
+
+      
+      }    
+}
+
+
+@media (max-width:60em){
+    .btn-mobile-nav {
+        display: block;
+        z-index: 9999;
+    }
+
+    .icon-mobile-nav[name="close-outline"] {
+        display: none;
+    }
+    
+
+    .main-nav {
+        background-color: rgba(255, 255, 255, 0.97);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    .nav-open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        font-size: 3rem;
+    }
+
+    .link-nav-cta{
+        display: none;
+    }
+    
+    .testimonial::before {
+        left: -5.4rem;
+        font-size: 15rem;
+        
+      }
+
+      .testimonial-h{
+        font-size: 3rem;
+        margin: 4rem auto 0rem ;
+        
+      }
+
+
+   
+      
+      .testimonials-values-item-box{
+
+        gap: 1rem;
+      }
+      
+      .testimonials-values-item{
+
+        padding: 1rem;
+        gap: 4rem;
+      }
+      
+      .testimonials-values-item .values-item-img img{
+        width: 50px;
+        height: 50px;
+      }
+      
+      
+      .values-item-text{
+        font-size: 1.8rem;
+
+      
+      }
+      
+      .values-item-text span{
+        font-size: 1.6rem;
+
+      }
+
+
+      .marquee {
+
+        height: 60px; /* Adjust marquee height */
+        
+      }
+      .track img {
+        height: 40px; /* Icons fill marquee height */
+      }
+
+}
+
+
+@media(max-width:48em){
+
+    .hero{
+        max-width: 65rem;
+        display: grid;
+        grid-template-columns: 11fr 1fr;
+        
+    }
+
+    .hero h1 {
+        font-size: 4.8rem;
+        margin: 5rem 0;
+        
+      }
+      
+      .hero-description {
+        font-size: 1.6rem;
+        
+        margin-bottom: 6rem;
+      }
+      
+      .marquee {
+
+        height: 60px; /* Adjust marquee height */
+        margin-top: 8rem;
+      }
+      .track img {
+        height: 40px; /* Icons fill marquee height */
+      }
+      
+      
+      
+
+
+
+    .hero-img-box{
+        display: none;
+    }
+
+
+    .about-us h2 {
+  
+        font-size: 3.2rem;
+        margin: 0 auto 1rem auto;
+        width : 85%;
+        
+
+      }
+      
+      .about-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 2rem;
+        margin-top: -8rem;
+      }
+      
+   
+      .about-content-text {
+
+        margin-top: -4rem;
+      }
+
+      
+
+
+      
+      .about-content-img img {
+        max-width: 70%;
+        
+      }
+      
+
+      
+      .stats-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.4rem;
+        max-width: 120rem;
+        margin: -4rem auto 0;
+      }
+      
+      .stat-box {
+        box-shadow: 0.5 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      }
+      
+
+      .stat-number {
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: #333333;
+        margin-bottom: 0.8rem;
+        display: block;
+      }
+      
+      .stat-text {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #666666;
+      }
+
+
+
+
+
+      .section-testimonials {
+        
+        margin: 0rem 0 8rem 0;
+        padding-top: 1rem;
+        
+      }
+      
+      .testimonials {
+        
+
+        padding: 4rem 2rem 6rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 6rem;
+
+      
+      
+      
+      }
+      
+
+     
+        .testimonials-values-item {
+          gap: 2rem;
+        }
+      
+        .testimonials-values-item .values-item-img img {
+          width: 40px;
+          height: 40px;
+        }
+      
+        .values-item-text {
+          font-size: 1.8rem;
+        }
+      
+        .values-item-text span {
+          font-size: 1.8rem;
+        }
+      
+        .testimonials-box {
+          margin: 0 3rem;
+        }
+      
+        .testimonial-h {
+          font-size: 2.8rem;
+          margin: 4rem auto 0;
+        }
+      
+      
+        .section-services { 
+            margin: 0 0 8rem 0;
+            
+          }
+            
+          
+          
+          .services {
+            
+            margin: 0 auto;
+            padding: 0 3.2rem;
+            
+            gap: 9.6rem;
+            
+          }
+          
+          .heading-secondary {
+            
+            font-size: 3.6rem;
+            margin: 3rem auto 0rem ;
+            
+            width : 90%;
+            
+          }
+          
+          .heading-tertiary{
+            font-size: 2rem;
+            margin: 2rem auto 0rem ;
+            
+            width : 70%;
+            
+          }
+          
+          .services-grid {
+            
+            padding: 0 6rem;
+          }
+          
+          
+          
+          
+          .services-item {
+            
+            padding: 1.5rem;
+            gap: 1.5rem;
+            
+            min-height: 15rem;
+          
+            
+            
+          }
+          
+         
+          
+          .services-item .services-icon img {
+            width: 80px;
+            height: 80px;
+          }
+          
+          .section-contact-us {
+  
+            margin: 0 0 0 0;
+            
+          }
+          
+          
+          
+          .contact-us {
+            max-width: 130rem;
+            margin: 4rem auto 0;
+            border-radius: 0;
+            /* padding: 0 3.2rem; */
+            display: grid;
+            grid-template-columns: 1fr; 
+            /* gap: 9.6rem; */
+            /* align-items: center; */
+            /* background-color: #5271FF; */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+          }
+          
+          
+          .address-section{
+            background-color: #5271FF;
+            border-radius: 0;
+          }
+          
+          .contact-us-address-area{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            /* align-items: center; */
+            padding: 2rem;
+          
+          }
+          
+          /* .contact-us-cta-heading{
+            
+            
+          
+          } */
+          
+          .cta-heading{
+            margin: 2rem 0 0 2rem;
+            font-size: 2.8rem;
+            color: #b6dbff;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700; 
+            line-height: 1.2;
+            letter-spacing: 0.1rem;
+            font-style: normal;
+            max-width: 80%;
+          }
+          
+          .cta-text{
+            margin: 2rem 0 3rem 2rem;
+            font-size: 4rem;
+            color: #ffffff;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700; 
+            /* line-height: 1.2; */
+            letter-spacing: 0.1rem;
+            font-style: normal;
+          
+          }
+          
+          .cta-image{
+            margin: 0 0 2rem 3rem;
+            width: 100px;
+            height: 100px;
+          
+          }
+          
+          .cta-image img{
+            width: 100px;
+            height: 100px;
+            transform: scaleX(-1);
+          }
+          
+          
+          
+          .form-section{
+           
+            
+            border-radius: 0;
+          
+            
+          }
+      
+          
+          
+          
+          
+          
+          .contact-us-address{
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 0 0 0 2rem;
+            
+          }
+          
+          .address-item{
+            margin-top: 1rem;
+          
+          }
+          
+          .address-icon{
+            display: flex;
+            gap: 1.2rem;
+          
+          }
+          
+          .icon-img{
+            width: 30px;
+            height: 30px;
+          
+          }
+          
+          .icon-img img{
+            width: 30px;
+            height: 30px;
+            
+          }
+          
+          .icon-text{
+            display: flex;
+            font-size: 1.rem;
+            color: #ffffff;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500; 
+            margin: auto 0;
+            letter-spacing: 0.1rem;
+            font-style: normal;
+            line-height: 1.2;
+          }
+          
+          .icon-text a{
+            text-decoration: none;
+            color: #ffffff;
+          }
+          
+          
+          .social-media{
+            margin: 1rem 0 2rem 2rem;
+            display: flex;
+            gap: 1.5rem;
+          }
+          .social-media-icon{
+            width: 30px;
+            height: 30px;
+          }
+          .social-media-icon img{
+            width: 30px;
+            height: 30px;
+          }
+          
+          
+          
+          
+          
+          
+          
+          
+          .contact-us-form-area{
+            display: grid;
+            grid-template-columns: 1fr;
+            
+            padding: 2rem;
+          }
+          
+          .contact-us-form{
+            display: grid;
+            grid-template-columns: 1fr;
+          
+          }
+          
+          .form-heading{
+            font-size: 3.6rem;
+            color: #ffffff;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700; 
+            line-height: 1.2;
+            letter-spacing: 0.1rem;
+            font-style: normal;
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+          
+          }
+          
+          
+          .message-form{
+            
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 3.2rem;
+            padding: 2rem;
+          }
+          
+          .message-form label{
+            display: block;
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: 0.8rem;
+            color: #ffffff;
+          }
+          
+          .message-form input, .message-form textarea{
+            margin-bottom: 2.4rem;
+            width: 100%;
+            padding: 1.2rem;
+            font-size: 1.6rem;
+            font-family: inherit;
+            border: none;
+            color: #555555;
+            border-radius: 5px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+          }
+          
+          input::placeholder {
+            color: #777777;
+            opacity: 0.5;
+          }
+          
+          textarea::placeholder{
+            color: #777777;
+            opacity: 0.5;
+          }
+          
+          
+          .message-form textarea{
+            height: 15rem;
+          }
+          
+          .msg-btn{
+            background-color: #7b66ff;
+            color: #fff;
+            display: inline-block;
+            background-color: #5271FF;
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 1.2rem 2.4rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+            margin-top: 1rem;
+            border: none;
+          
+          }
+          
+
+          
+          
+          
+          
+
+}

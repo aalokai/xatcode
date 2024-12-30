@@ -1,3 +1,21 @@
+// Make mobile navigation work
+
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+
+
+
+
+
+
+
+
+
 // Function to highlight the active link
 function highlightLink() {
     const sections = document.querySelectorAll('section');
@@ -106,7 +124,7 @@ const obs = new IntersectionObserver(
     // In the viewport
     root: null,
     threshold: 0,
-    rootMargin: "-60px",
+    // rootMargin: "-20px 0 0 0",
   }
 );
 obs.observe(sectionHeroEl);
@@ -250,11 +268,3 @@ const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
-// Make mobile navigation work
-
-const btnNavEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".header");
-
-btnNavEl.addEventListener("click", function () {
-  headerEl.classList.toggle("nav-open");
-});
