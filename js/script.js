@@ -29,86 +29,87 @@ function highlightLink() {
   }
   
   // Click Event to Highlight Link
-  document.querySelectorAll('.main-nav-link').forEach(link => {
-    link.addEventListener('click', function() {
-      document.querySelectorAll('.main-nav-link').forEach(link => {
-        link.classList.remove('active');
-      });
-      this.classList.add('active');
-    });
-  });
+  // document.querySelectorAll('.main-nav-link').forEach(link => {
+  //   link.addEventListener('click', function() {
+  //     document.querySelectorAll('.main-nav-link').forEach(link => {
+  //       link.classList.remove('active');
+  //     });
+  //     this.classList.add('active');
+  //   });
+  // });
   
   // Scroll Event to Update Active Link
-  window.addEventListener('scroll', highlightLink);
+  // window.addEventListener('scroll', highlightLink);
   
   // Call on page load to check which section is in view
-  document.addEventListener('DOMContentLoaded', highlightOnLoad);
+  // document.addEventListener('DOMContentLoaded', highlightOnLoad);
   
 
 
 
 
-// // Smooth scrolling animation
+// Smooth scrolling animation
 
-// const allLinks = document.querySelectorAll("a:link");
+const allLinks = document.querySelectorAll("a:link");
 
-// allLinks.forEach(function (link) {
-//   link.addEventListener("click", function (e) {
-//     // e.preventDefault();
-//     const href = link.getAttribute("href");
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    // e.preventDefault();
+    const href = link.getAttribute("href");
 
-//     // Scroll back to top
-//     if (href === "#" || href === "#home"){
-//       e.preventDefault();
-//       window.scrollTo({
-//         top: 0,
-//         behavior: "smooth",
-//       });
-//     }
-//     // Scroll to other links
-//     if (href !== "#" && href !== "#home" && href.startsWith("#")) {
-//       e.preventDefault();
-//       const sectionEl = document.querySelector(href);
-//       sectionEl.scrollIntoView({ behavior: "smooth" });
-//     }
+    // Scroll back to top
+    if (href === "#" || href === "#home"){
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+    // Scroll to other links
+    if (href !== "#" && href !== "#home" && href.startsWith("#")) {
+      e.preventDefault();
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
 
-//     // Add focus to the clicked link
-//     allLinks.forEach(function (link) {
-//       link.classList.remove("active");
-//     });
-//     link.classList.add("active");
-//     // Close mobile naviagtion
-//     if (link.classList.contains("main-nav-link"))
-//       headerEl.classList.toggle("nav-open");
-//   });
-// });
+    // Add focus to the clicked link
+    allLinks.forEach(function (link) {
+      link.classList.remove("active");
+    });
+    link.classList.add("active");
+    // Close mobile naviagtion
+    if (link.classList.contains("main-nav-link"))
+      headerEl.classList.toggle("nav-open");
+  });
+  
+});
 
 
-//   // Sticky navigation
+  // Sticky navigation
 
-// const sectionHeroEl = document.querySelector(".section-hero");
+const sectionHeroEl = document.querySelector(".section-hero");
 
-// const obs = new IntersectionObserver(
-//   function (entries) {
-//     const ent = entries[0];
-//     console.log(ent);
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+    
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
 
-//     if (ent.isIntersecting === false) {
-//       document.body.classList.add("sticky");
-//     }
-
-//     if (ent.isIntersecting === true) {
-//       document.body.classList.remove("sticky");
-//     }
-//   },
-//   {
-//     // In the viewport
-//     root: null,
-//     threshold: 0,
-//     rootMargin: "-80px",
-//   }
-// );
-// obs.observe(sectionHeroEl);
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-60px",
+  }
+);
+obs.observe(sectionHeroEl);
 
 
 
@@ -244,16 +245,16 @@ slider();
 
 
 
-// // Set current year
-// const yearEl = document.querySelector(".year");
-// const currentYear = new Date().getFullYear();
-// yearEl.textContent = currentYear;
+// Set current year
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
 
-// // Make mobile navigation work
+// Make mobile navigation work
 
-// const btnNavEl = document.querySelector(".btn-mobile-nav");
-// const headerEl = document.querySelector(".header");
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
 
-// btnNavEl.addEventListener("click", function () {
-//   headerEl.classList.toggle("nav-open");
-// });
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});

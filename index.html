@@ -7,8 +7,8 @@
   <title>Xatcode</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/general.css" type="text/css">
-
-  <!-- Fonts BEVAN, Anton-->
+  <link rel="icon" href="images/xatcode-fav.png" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -28,14 +28,14 @@
     </a>
     <nav class="main-nav" id="navbar">
       <ul class="main-nav-list">
-        <li><a class="main-nav-link" href="#home">Home</a></li>
+        <li><a class="main-nav-link" href="#">Home</a></li>
         <li><a class="main-nav-link" href="#aboutus">About Us</a></li>
         <li><a class="main-nav-link" href="#services">Services</a></li>
         <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
         <li><a class="main-nav-link" href="#contactus">Contact Us</a></li>
       </ul>
     </nav>
-    <a href="#getquote" class="main-nav-link nav-cta">Get a Quote</a>
+    <a href="#contactus" class="main-nav-link nav-cta">Get a Quote</a>
     <button class="btn-mobile-nav">
       <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
       <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
@@ -64,11 +64,10 @@
             <img src="images/xatcode-fav-bg.png" class="hero-img" alt="Xatcode logo" />
           </picture>
         </div>
+
+        
       </div>
-    </section>
-    <!--Hero Section Ends-->
-    <!-- Tech Stack Section -->
-    <section class="section-tech-stack" id="techstack">
+
       <div class="marquee">
         <div class="track">
 
@@ -152,6 +151,12 @@
 
         </div>
       </div>
+
+    </section>
+    <!--Hero Section Ends-->
+    <!-- Tech Stack Section -->
+    <section class="section-tech-stack" id="techstack">
+      
     </section>
 
     <!--About Us Section-->
@@ -592,27 +597,125 @@
     
         <div class="address-section">
           <div class="contact-us-address-area">
+
             <div class="contact-us-cta-heading">
-              <h2 class="cta-heading">Your Next Big Step Awaits - </h2>
-              <p class="cta-text">Partner With Us!</p>
+              <h2 class="cta-heading">Your next big step awaits -</h2>
+              <p class="cta-text">Let's build someting great together.</p>
             </div>
+
+            <div class="cta-image">
+              <img src="images/create.png" alt="CTA-Image">
+            </div>
+
             <div class="contact-us-address">
+
+              <div class="address-item">
+                <div class="address-icon">
+                  <div class="icon-img">
+                    <img src="images/email.png" alt="Email Icon">
+                  </div>
+                  <div class="icon-text">
+                    <p><a
+                      href="mailto:info@xatcode.com">info@xatcode.com</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="address-item">
+                <div class="address-icon">
+                  <div class="icon-img">
+                    <img src="images/phone-call.png" alt="Location Icon">
+                  </div>
+                  <div class="icon-text">
+                    <p><a href="tel:+919454236675">+91 9454236675</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="address-item">
+                <div class="address-icon">
+                  <div class="icon-img">
+                    <img src="images/location.png" alt="Location Icon">
+                  </div>
+                  <div class="icon-text">
+                    <p>Kapoorthala, Lucknow - 226024, Uttar Pradesh, India</p>
+                  </div>
+                </div>
+              </div>
+
     
             </div>
+
+            <div class="social-media">
+              <div class="social-media-icon">
+                <a href="https://www.linkedin.com/company/xatcode" target="_blank">
+                  <img src="images/linkedin.png" alt="Linkedin Icon">
+                </a>
+              </div>
+              <div class="social-media-icon">
+                <a href="https://www.twitter.com/xatcode" target="_blank">
+                  <img src="images/x.png" alt="X Icon">
+                </a>
+              </div>
+              <div class="social-media-icon">
+                <a href="https://www.linkedin.com/company/xatcode" target="_blank">
+                <img src="images/facebook.png" alt="Facebook Icon">
+                </a>
+              </div>
+              <div class="social-media-icon">
+                <a href="https://www.linkedin.com/company/xatcode" target="_blank">
+                <img src="images/instagram.png" alt="Instagram Icon">
+                </a>
+              </div>
+              
+              
+
+            </div>
+
+
+
           </div>
         </div>
+    
+    
         <div class="form-section">
           <div class="contact-us-form-area">
             <div class="contact-us-form">
-              <h2 class="form-heading"></h2>
-              <form action="#" class="form">
+              <h2 class="form-heading">Get a Quote</h2>
+              <div class="form-g">
+              
                 <div class="form-group">
-    dsrfg
+                  <form class="message-form" action="https://formspree.io/f/mdoqdkll" method="POST">
+                    <div>
+                      <label for="full-name">Full Name
+                      </label><input id="full-name" type="text" name="Name" placeholder="Amit Kumar" required />
+                    </div>
+                    <div>
+                      <label for="mail">Email Address</label>
+                      <input class="email" type="email" name="Email" placeholder="me@example.com" required />
+                    </div>
+                    <div>
+                      <label for="phone">Phone Number</label>
+                      <input class="phone" type="tel" name="Phone" placeholder="9876543210" required />
+                    </div>
+                    <div>
+                      <label for="subject">Subject</label>
+                      <input class="subject" type="text" name="Subject"
+                        placeholder="Project Proposal: Redesigning Company Website" required />
+                    </div>
+                    <div>
+                      <label for="message">Message</label>
+                      <textarea name="Message" class="message"
+                        placeholder="I hope this message finds you well. I am reaching out to discuss a ..."></textarea>
+                    </div>
+                    <button class="msg-btn" type="submit">Send</button>
+                  </form>
+                  </div>
                 </div>
             </div>
           </div>
         </div>
-      </div>
+        </div>
     </section>
 
     
@@ -621,6 +724,9 @@
 
 
   <footer class="footer-area">
+    <div class="footer-text">
+      <p>Copyright &copy;  Xatcode Technologies <span class="year">2027</span>. All Rights Reserved.</p>
+  </div>
 
   </footer>
 
