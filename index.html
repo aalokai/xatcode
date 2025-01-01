@@ -238,8 +238,8 @@
       </div>
       <div class="services">
         <div class="services-heading">
-          <h2 class="heading-secondary">Services that add significant value</h2>
-          <h3 class="heading-tertiary">We are committed to your success, offering expertise, innovation, and dedication
+          <h2 class="heading-h2">Services that add significant value</h2>
+          <h3 class="heading-h3">We are committed to your success, offering expertise, innovation, and dedication
             to every project.</h3>
         </div>
 
@@ -700,10 +700,10 @@
               <div class="form-g">
               
                 <div class="form-group">
-                  <form class="message-form" action="formupload.php" method="POST">
+                  <form id="messageForm" class="message-form" method="POST">
                     <div>
-                      <label for="full-name">Full Name
-                      </label><input id="full-name" type="text" name="Name" placeholder="Amit Kumar" required />
+                      <label for="full-name">Full Name</label>
+                      <input id="full-name" type="text" name="Name" placeholder="Amit Kumar" required />
                     </div>
                     <div>
                       <label for="mail">Email Address</label>
@@ -715,16 +715,16 @@
                     </div>
                     <div>
                       <label for="subject">Subject</label>
-                      <input class="subject" type="text" name="Subject"
-                        placeholder="Project Proposal: Redesigning Company Website" required />
+                      <input class="subject" type="text" name="Subject" placeholder="Project Proposal: Redesigning Company Website" required />
                     </div>
                     <div>
                       <label for="message">Message</label>
-                      <textarea name="Message" class="message"
-                        placeholder="I hope this message finds you well. I am reaching out to discuss a ..."></textarea>
+                      <textarea name="Message" class="message" placeholder="I hope this message finds you well. I am reaching out to discuss a ..."></textarea>
                     </div>
-                    <button class="msg-btn" type="submit">Send</button>
+                    <button id="submitBtn" class="msg-btn" type="button">Send</button>
+                    <div id="responseMessage" style="margin-top: 10px; color: green;"></div>
                   </form>
+                  
                   </div>
                 </div>
             </div>
@@ -740,7 +740,7 @@
 
   <footer class="footer-area">
     <div class="footer-text">
-      <p>Copyright &copy;  Xatcode Technologies <span class="year">2027</span>. All Rights Reserved.</p>
+      <p>Copyright &copy;  Xatcode Technologies <span class="year">2027</span>.<br/>All Rights Reserved.</p>
   </div>
 
   </footer>

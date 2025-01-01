@@ -468,7 +468,9 @@
   align-items: center;
 }
 
-.heading-secondary {
+
+
+.heading-h2 {
   
   font-size: 3.6rem;
   margin: 3rem auto 0rem ;
@@ -483,7 +485,7 @@
   text-align: center;
 }
 
-.heading-tertiary{
+.heading-h3{
   font-size: 2rem;
   margin: 2rem auto 0rem ;
   color: #888888;
@@ -1079,6 +1081,7 @@
 }
 
 .message-form input, .message-form textarea{
+  background-color: #f0fdff;
   margin-bottom: 3rem;
   width: 100%;
   padding: 1.2rem;
@@ -1125,7 +1128,19 @@ textarea::placeholder{
 
 .msg-btn:hover{
   background-color: #4051D3;
+  cursor:pointer
 }
+
+input:focus, 
+textarea:focus {
+  background-color: #FFFFFF;
+  outline: none; /* Remove the default outline for better design */
+}
+
+button:focus {
+  outline: none; /* Optional: remove focus outline from buttons */
+}
+
 
 
 /* Footer Section */
@@ -1138,8 +1153,9 @@ textarea::placeholder{
   
 }
 
+
 .footer-text{
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #fff;
   font-weight: 400;
   text-align: center;
@@ -1165,4 +1181,7 @@ textarea::placeholder{
   font-style: normal;
   width : 80%;
   text-align: center;
+
+
+
 }

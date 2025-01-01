@@ -268,3 +268,116 @@ const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
+
+
+
+
+
+//Form
+
+
+
+document.getElementById("submitBtn").addEventListener("click", function () {
+  const submitBtn = document.getElementById("submitBtn");
+  const form = document.getElementById("messageForm");
+  
+  // Get form fields
+  const name = form.elements["Name"];
+  const email = form.elements["Email"];
+  const phone = form.elements["Phone"];
+  const subject = form.elements["Subject"];
+  const message = form.elements["Message"];
+
+  // Validate fields
+if (!name.value.trim()) {
+  name.focus(); // Focus on the empty input
+  name.style.boxShadow = "0 0 5px red"; // Add red glow
+  name.style.border = "1px solid #ccc"; // Keep consistent border
+  return;
+} else {
+  name.style.boxShadow = ""; // Remove the box-shadow if valid
+  name.style.border = "1px solid #ccc"; // Reset to default border
+}
+
+if (!email.value.trim()) {
+  email.focus();
+  email.style.boxShadow = "0 0 5px red";
+  email.style.border = "1px solid #ccc";
+  return;
+} else {
+  email.style.boxShadow = "";
+  email.style.border = "1px solid #ccc";
+}
+
+if (!phone.value.trim()) {
+  phone.focus();
+  phone.style.boxShadow = "0 0 5px red";
+  phone.style.border = "1px solid #ccc";
+  return;
+} else {
+  phone.style.boxShadow = "";
+  phone.style.border = "1px solid #ccc";
+}
+
+if (!subject.value.trim()) {
+  subject.focus();
+  subject.style.boxShadow = "0 0 5px red";
+  subject.style.border = "1px solid #ccc";
+  return;
+} else {
+  subject.style.boxShadow = "";
+  subject.style.border = "1px solid #ccc";
+}
+
+if (!message.value.trim()) {
+  message.focus();
+  message.style.boxShadow = "0 0 5px red";
+  message.style.border = "1px solid #ccc";
+  return;
+} else {
+  message.style.boxShadow = "";
+  message.style.border = "1px solid #ccc";
+}
+
+
+  // Change button text to indicate submission is in progress
+  submitBtn.innerText = "Sending...";
+  submitBtn.disabled = true; // Disable button to prevent multiple clicks
+
+  const formData = new FormData(form);
+
+  fetch("formupload.php", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => response.text())
+    .then((data) => {
+      // Update button text to show success message
+      submitBtn.innerText = "Message Sent!";
+      submitBtn.style.backgroundColor = "green"; // Optional: change button color
+
+      // Reset the form after success
+      form.reset();
+
+      // Reset button after 5 seconds
+      setTimeout(() => {
+        submitBtn.innerText = "Send";
+        submitBtn.style.backgroundColor = ""; // Reset to default color
+        submitBtn.disabled = false;
+      }, 3000); // 3000 milliseconds = 3 seconds
+    })
+    .catch((error) => {
+      // Update button text to show an error
+      submitBtn.innerText = "Error! Try Again";
+      submitBtn.style.backgroundColor = "red"; // Optional: change button color
+
+      // Reset button after 5 seconds
+      setTimeout(() => {
+        submitBtn.innerText = "Send";
+        submitBtn.style.backgroundColor = ""; // Reset to default color
+        submitBtn.disabled = false;
+      }, 5000); // 5000 milliseconds = 5 seconds
+
+      console.error("Error:", error);
+    });
+});
