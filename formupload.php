@@ -1,16 +1,16 @@
 <?php
-//edit the following lines with your database credentials
-$servername = "localhost";
-$username = "username";
-$password = "password"; 
-$database = "database";
+
+$server = "";
+$username = "";
+$password = ""; 
+$database = "";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $database);
+$con = mysqli_connect($server, $username, $password, $database);
 
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
 }
 
 // Check if form is submitted
@@ -22,18 +22,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['Message'];
 
     // Insert data into the database
-    $sql = "INSERT INTO messages (Name, Email, Phone, Subject, Message) VALUES (?, ?, ?, ?, ?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("sssss", $name, $email, $phone, $subject, $message);
+    $query = "INSERT INTO messages (Name, Email, Phone, Subject, Message) VALUES ('$name', '$email', '$phone', '$subject', '$message')";
 
-    if ($stmt->execute()) {
+    if (mysqli_query($con, $query)) {
         echo "Message sent successfully!";
     } else {
-        echo "Error: " . $conn->error;
+        echo "Error: " . mysqli_error($con);
     }
-
-    $stmt->close();
 }
 
-$conn->close();
+// Close connection
+mysqli_close($con);
 ?>
